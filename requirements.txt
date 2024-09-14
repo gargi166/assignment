@@ -1,0 +1,8 @@
+python==3.9.7
+numpy==2.0.2
+pandas==2.2.2
+pip==21.2.3
+pymongo==4.8.0
+matplotlib==3.9.2
+seaborn==0.13.2
+mongomock==4.2.0.post1
