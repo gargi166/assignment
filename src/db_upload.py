@@ -29,10 +29,10 @@ def upload_TimeSeries_Data(df_timeseries):
 
         # Convert DataFrame to dictionary and than enter each record into MongoDB
         df_timeseries=pd.DataFrame(df_timeseries)
-        print(df_timeseries.head())
+       
         records = df_timeseries.to_dict(orient='records')
         for record in records:
-            print("each record",record)
+            
             collection.insert_one(record)
 
         

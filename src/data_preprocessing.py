@@ -58,6 +58,7 @@ def removeOutliner(df_time_series,column_name):
 
 def data_Preprocessing(df_time_series):
     try:
+        df_time_series = pd.DataFrame(df_time_series)
         if  df_time_series.empty:
            return ({"Error" : "Data failure to pass to preprocessing module"})
         
